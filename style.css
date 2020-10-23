@@ -1,9 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap');
-/* General Rulesets */
 
+/* General Rulesets */
+:root {
+  --color: #2c2d48;
+  --background-color: #f0f0f1;
+  --background-card: #ffffff;
+  --bold: 500;
+  --normal: 400;
+  --thin: 200;
+}
 * {
-    color: #202A43;
+    color: var(--color);
 }
 
 html {
@@ -20,7 +28,7 @@ html {
   
 body {
   font-family: 'Poppins', sans-serif;
-  background: #fef0e4;
+  background: var(--background-color);
   height: auto;
   padding-bottom: 3vh;
 }
@@ -45,56 +53,59 @@ margin: 0 auto;
 }
 
 .section-title {
-  margin-bottom: calc(3vw);
+  margin-bottom: 3vw;
 }
 .title-1 {
   font-size: calc(4.5vh + 3.5vw);
-  font-weight: 700;
+  font-weight: var(--bold);
   line-height: 1.25;
 }
 
 .title-2 {
   font-size: calc(4vh + 0.5vw);
-  font-weight: 700;
+  font-weight: var(--bold);
   line-height: 1.25;
 }
 
 .titleEng {
-  font-weight: 200;
+  font-weight: var(--thin);
 }
 
 .card {
-  border: 1px solid #202A43;
-  border-radius: 1.5%;
-  background-color: #ffffff;
+  border: 1px solid var(--color);
+  border-radius: 8px;
+  background-color: var(--background-card);
   transition: all 0.2s linear;
   position: relative;
 }
 
 .card:hover {
-  box-shadow: 5px 6px 0px 0px #202A43;
+  box-shadow: 5px 6px 0px 0px var(--color);
   transform: translate(-5px,-6px);
+  cursor: pointer;
 }
 
 .card-date {
   font-family: 'Roboto Mono', 'Poppins', sans-serif;
+  font-size: 0.875rem;
   color: white;
-  background-color: #202A43;
+  background-color: var(--color);
   padding: 0.1rem 0.2rem;
-  font-weight: 400;
+  font-weight: var(--normal);
 }
 
 .card-title {
-  font-weight: 700;
+  font-weight: var(--bold);
 }
 
 .card-subtitle {
-  font-weight: 300;
+  font-weight: var(--thin);
 }
 
 img.emoji {
   margin: 3rem auto;
-  width: 17vh;
+  width: 18vh;
+  height: 100%;
 }
 
 footer {
@@ -104,7 +115,7 @@ footer {
   text-align: center;
   bottom: 0;
   position: static;
-  font-weight: 400;
+  font-weight: var(--normal);
 }
 
 @media only screen and (max-width: 600px) {
