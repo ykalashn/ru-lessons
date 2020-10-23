@@ -20,7 +20,7 @@ html {
   
 body {
   font-family: 'Poppins', sans-serif;
-  background: #F1F9EF;
+  background: #fef0e4;
   height: auto;
   padding-bottom: 3vh;
 }
@@ -65,8 +65,8 @@ margin: 0 auto;
 
 .card {
   border: 1px solid #202A43;
-  border-radius: 1%;
-  background-color: #F1F9EF;
+  border-radius: 1.5%;
+  background-color: #ffffff;
   transition: all 0.2s linear;
   position: relative;
 }
